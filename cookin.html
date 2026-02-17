@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CookinNonsense | Cuisine</title>
+
+<style>
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* NAVBAR */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,0.9);
+    border-bottom:2px solid #c1121f;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    letter-spacing:3px;
+    font-weight:bold;
+    color:#e63946;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#e63946;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(193,18,31,0.5));
+}
+
+.hero h1{
+    font-size:60px;
+    letter-spacing:4px;
+    color:#e63946;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+    color:#f1faee;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:12px 35px;
+    border:none;
+    background:#c1121f;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:30px;
+    transition:0.4s;
+}
+
+.hero button:hover{
+    background:white;
+    color:#c1121f;
+}
+
+/* SECTION */
+section{
+    padding:120px 60px;
+    text-align:center;
+}
+
+section h2{
+    margin-bottom:30px;
+    font-size:32px;
+    color:#e63946;
+}
+
+.about{
+    max-width:750px;
+    margin:auto;
+    line-height:1.8;
+    color:#ddd;
+}
+
+/* GALLERY */
+.gallery{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:40px;
+}
+
+.gallery img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    filter:brightness(1.1) contrast(1.1);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #e63946;
+}
+
+/* INSTAGRAM BUTTON */
+.insta-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 30px;
+    background:#e63946;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.insta-btn:hover{
+    background:white;
+    color:#e63946;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    padding:40px;
+    text-align:center;
+    border-top:2px solid #c1121f;
+}
+
+.copy{
+    color:#aaa;
+    font-size:14px;
+    margin-top:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .hero h1{
+        font-size:35px;
+    }
+
+    section{
+        padding:100px 20px;
+    }
+
+    .gallery img{
+        width:90%;
+        height:350px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CookinNonsense</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+
+        <!-- 🔥 PASTE YOUR INSTAGRAM LINK BELOW -->
+        <a href="PASTE-YOUR-INSTAGRAM-LINK-HERE" target="_blank">Instagram</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="home">
+    <div>
+        <h1>CookinNonsense</h1>
+        <p>Where Flavor Meets Attitude 🔥</p>
+        <button onclick="scrollToGallery()">See Our Dishes</button>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About CookinNonsense</h2>
+    <p class="about">
+        CookinNonsense is a bold culinary experience mixing creativity,
+        passion, and unforgettable flavors.
+        Every dish is crafted with attitude and fire.
+    </p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>Our Creations</h2>
+
+    <div class="gallery">
+        <!-- Replace with your real food pictures -->
+        <img src="../webproject/1.jpg" alt="Dish 1">
+        <img src="../webproject/2.jpg" alt="Dish 2">
+        <img src="../webproject/3.jpg" alt="Dish 3">
+        <img src="../webproject/4.jpg" alt="Dish 4">
+    </div>
+
+    <!-- 🔥 PASTE YOUR INSTAGRAM LINK BELOW -->
+    <a class="insta-btn" 
+       href="https://www.instagram.com/cookinonsense?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+       target="_blank">
+       Follow Us on Instagram
+    </a>
+
+</section>
+
+<footer>
+    <div class="copy">
+        © 2026 CookinNonsense. All Rights Reserved.
+    </div>
+</footer>
+
+<script>
+function scrollToGallery(){
+    document.getElementById("gallery").scrollIntoView({
+        behavior:"smooth"
+    });
+}
+</script>
+
+</body>
+</html>
+
